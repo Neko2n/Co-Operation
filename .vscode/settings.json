@@ -1,0 +1,358 @@
+{
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.vs": true,
+        "**/.gitmodules": true,
+        "**/.vsconfig": true,
+        "**/*.booproj": true,
+        "**/*.pidb": true,
+        "**/*.suo": true,
+        "**/*.user": true,
+        "**/*.userprefs": true,
+        "**/*.unityproj": true,
+        "**/*.dll": true,
+        "**/*.exe": true,
+        "**/*.pdf": true,
+        "**/*.mid": true,
+        "**/*.midi": true,
+        "**/*.wav": true,
+        "**/*.gif": true,
+        "**/*.ico": true,
+        "**/*.jpg": true,
+        "**/*.jpeg": true,
+        "**/*.png": true,
+        "**/*.psd": true,
+        "**/*.tga": true,
+        "**/*.tif": true,
+        "**/*.tiff": true,
+        "**/*.3ds": true,
+        "**/*.3DS": true,
+        "**/*.fbx": true,
+        "**/*.FBX": true,
+        "**/*.lxo": true,
+        "**/*.LXO": true,
+        "**/*.ma": true,
+        "**/*.MA": true,
+        "**/*.obj": true,
+        "**/*.OBJ": true,
+        "**/*.asset": true,
+        "**/*.cubemap": true,
+        "**/*.flare": true,
+        "**/*.mat": true,
+        "**/*.meta": true,
+        "**/*.prefab": true,
+        "**/*.unity": true,
+        "build/": true,
+        "Build/": true,
+        "Library/": true,
+        "library/": true,
+        "obj/": true,
+        "Obj/": true,
+        "Logs/": true,
+        "logs/": true,
+        "ProjectSettings/": true,
+        "UserSettings/": true,
+        "temp/": true,
+        "Temp/": true
+    },
+    "files.associations": {
+        "*.asset": "yaml",
+        "*.meta": "yaml",
+        "*.prefab": "yaml",
+        "*.unity": "yaml"
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.sln": "*.csproj",
+        "*.slnx": "*.csproj"
+    },
+    "dotnet.defaultSolution": "Co-Operation.slnx",
+    "editor.bracketPairColorization.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "source.json punctuation.definition",
+                    "source.json constant.language",
+                    "storage.type.primitive.cs",
+                    "source.cs entity.name.type.enum",
+                    "source.cs constant.numeric",
+                    "source.cs constant.language",
+                    "source.cs keyword.control",
+                    "source.cs storage.modifier",
+                    "source.cs storage.type.function.arrow",
+                    "source.cs punctuation.definition.annotation-arguments",
+                    "storage.type.annotation.cs",
+                    "source.cs punctuation.definition.annotation",
+                    "source.cs storage.modifier.package",
+                    "source.cs keyword.operator.assignment"
+                ],
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs keyword.other",
+                    "source.cs keyword.control",
+                    "source.cs storage.modifier",
+                    "source.cs storage.type.function.arrow"
+                ],
+                "settings": {
+                    "foreground": "#e06c75"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.control.throw.cs",
+                    "source.cs meta.throwables storage.modifier",
+                    "source.cs constant.language.null.cs"
+                ],
+                "settings": {
+                    "foreground": "#CC5030",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs keyword.control.new"
+                ],
+                "settings": {
+                    "foreground": "#C586C0"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs entity.name.type.class",
+                    "source.cs entity.name.type.interface"
+                ],
+                "settings": {
+                    "foreground": "#9eb8d7"
+                }
+            },
+            {
+                "scope": "source.cs entity.name.function",
+                "settings": {
+                    "foreground": "#61AFEF"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs punctuation.separator",
+                    "source.cs punctuation.bracket",
+                    "source.cs variable.parameter"
+                ],
+                "settings": {
+                    "foreground": "#bcbcbc"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs punctuation.definition.annotation-arguments",
+                    "storage.type.annotation.cs",
+                    "source.cs punctuation.definition.annotation"
+                ],
+                "settings": {
+                    "foreground": "#eacc6a"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs constant.numeric",
+                    "storage.type.primitive.cs",
+                    "source.cs entity.name.type.enum",
+                    "source.cs constant.language"
+                ],
+                "settings": {
+                    "foreground": "#D19A66"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs keyword.operator.increment-decrement",
+                    "source.cs keyword.operator.arithmetic"
+                ],
+                "settings": {
+                    "foreground": "#C586C0"
+                }
+            },
+            {
+                "scope": [
+                    "support.type.property-name.json",
+                    "source.cs string.quoted.double",
+                    "source.cs string.quoted.single"
+                ],
+                "settings": {
+                    "foreground": "#79c388"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs comment.line"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs meta.method-call entity.name.function",
+                    "source.cs meta.function-call entity.name.function"
+                ],
+                "settings": {
+                    "foreground": "#e0cc9a"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs meta.method.identifier entity.name.function"
+                ],
+                "settings": {
+                    "foreground": "#eacc6a"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs punctuation.terminator",
+                    "source.cs comment.line",
+                    "source.cs comment.line punctuation.definition.comment"
+                ],
+                "settings": {
+                    "foreground": "#525967"
+                }
+            },
+            {
+                "scope": [
+                    "source.json punctuation.separator",
+                    "source.cs punctuation.section",
+                    "source.cs punctuation.bracket",
+                    "source.cs punctuation.separator.delimiter",
+                    "source.cs punctuation.definition.parameters",
+                    "source.cs comment.block",
+                    "source.cs comment.block punctuation.definition.comment"
+                ],
+                "settings": {
+                    "foreground": "#727a8a"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs variable.other",
+                    "source.cs storage.modifier.import"
+                ],
+                "settings": {
+                    "foreground": "#bcbcbc"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs support.class",
+                    "source.cs storage.type"
+                ],
+                "settings": {
+                    "foreground": "#9eb8d7"
+                }
+            },
+            {
+                "scope": [
+                    "source.cs keyword"
+                ],
+                "settings": {
+                    "foreground": "#bcbcbc"
+                }
+            }
+        ]
+    },
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "struct:csharp": "#9eb8d7",
+            "class:csharp": "#9eb8d7",
+            "class.constructor:csharp": {
+                "bold": true
+            },
+            "class.declaration:csharp": {
+                "foreground": "#ebace5",
+                "bold": false
+            },
+            "interface:csharp": "#9eb8d7",
+            "enum:csharp": "#9eb8d7",
+            "enumMember:csharp": {
+                "foreground": "#6e8bc4",
+                "bold": true
+            },
+            "namespace:csharp": {
+                "foreground": "#bcbcbc",
+                "bold": true
+            },
+            "namespace.importDeclaration:csharp": {
+                "bold": false
+            },
+            "method:csharp": "#e0cc9a",
+            "method.declaration:csharp": "#eacc6a",
+            "parameter:csharp": {
+                "foreground": "#c6b6b2",
+                "italic": true
+            },
+            "parameter.readonly:csharp": {
+                "foreground": "#a6a1c7",
+                "italic": false
+            },
+            "recordComponent:csharp": {
+                "foreground": "#a6a1c7",
+                "italic": false
+            },
+            "field:csharp": {
+                "foreground": "#bcdcec",
+                "italic": true
+            },
+            "field.readonly:csharp": {
+                "foreground": "#6e8bc4",
+                "italic": false
+            },
+            "property:csharp": {
+                "foreground": "#6e8bc4",
+                "italic": false
+            },
+            "constant:csharp": {
+                "foreground": "#6e8bc4",
+                "italic": false
+            },
+            "variable:csharp": {
+                "foreground": "#bcdcec",
+                "italic": true
+            },
+            "variable.readonly:csharp": {
+                "foreground": "#8e9fc2",
+                "italic": false
+            },
+            "keyword:csharp": "#e06c75",
+            "modifier:csharp": "#e06c75"
+        }
+    },
+    "csharpReadonlyHighlight.field": {
+        "foreground": "#6e8bc4",
+        "italic": false
+    },
+    "csharpReadonlyHighlight.local": {
+        "foreground": "#8e9fc2",
+        "italic": false
+    },
+    "csharpReadonlyHighlight.parameter": {
+        "foreground": "#a6a1c7",
+        "italic": false
+    },
+    "csharpReadonlyHighlight.serializedField": {
+        "foreground": "#E6B4F0",
+        "italic": true
+    },
+    "csharpReadonlyHighlight.unityMessage": {
+        "bold": true
+    },
+    "csharpReadonlyHighlight.attribute": {
+        "foreground": "#727a8a"
+    },
+    "csharpReadonlyHighlight.monoBehaviourClass": {
+        "foreground": "#9EA6D7"
+    }
+}
