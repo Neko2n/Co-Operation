@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class GameManager : MonoBehaviour
+public partial class GameManager : MonoBehaviour
 {
     private const float DAMAGE_FORGIVENESS_RADIUS = 0.25f;
 
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         this.SecondsRemaining -= Time.deltaTime;
         if (this.SecondsRemaining <= 0)
         {
-            this.EndGame(false);
+            this.Rewind();
             return;
         }
 
@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour
         {
             this.forgivePosition = null;
         }
+        this.UpdateGhosts(mouse);
 
         // Debug the timer
         if (mouse.rightButton.isPressed)
@@ -127,5 +128,6 @@ public class GameManager : MonoBehaviour
         this.GameStarted = false;
         this.ClearStrokes();
         Debug.Log("Game " + (win ? "won" : "lost"));
+        this.GameEnded?.Invoke(win);
     }
 }
