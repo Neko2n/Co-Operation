@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public List<ShapeBehaviour> shapes = new();
 
     [Tooltip("The sprite to draw lines between shape nodes with.")]
-    public SpriteRenderer brush;
+    public SpriteRenderer? brush = null;
 
     [Tooltip("The number of seconds before you lose the game.")]
     [field: SerializeField] public float TotalSeconds { get; private set; }
@@ -86,9 +86,12 @@ public class GameManager : MonoBehaviour
                 this.completedShapes.Add(shape);
                 this.forgivePosition = position;
             }
-            SpriteRenderer stroke = GameObject.Instantiate<SpriteRenderer>(this.brush);
-            stroke.transform.position = node.TrySnapToSegment(position) ?? position;
-            this.strokes.Add(stroke);
+            if (this.brush != null)
+            {
+                SpriteRenderer stroke = GameObject.Instantiate<SpriteRenderer>(this.brush);
+                stroke.transform.position = node.TrySnapToSegment(position) ?? position;
+                this.strokes.Add(stroke);
+            }
         }
         if (!success)
         {
